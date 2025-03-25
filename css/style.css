@@ -1,16 +1,24 @@
 /* Ini CSS External */
 
-.main-header>h1 {
-    margin: 0px;
+.main-header h1 {
     background-color: mediumpurple;
     padding: 24px;
     text-align: center;
 }
 
 main {
+    padding: 24px;
+    text-align: center;
+}
+
+.container-main {
     background-color: lavender;
     padding: 16px;
-    text-align: center;
+    margin: auto;
+}
+
+.container-text {
+    padding: 10px;
 }
 
 .nav-fitur {
@@ -18,20 +26,38 @@ main {
     flex-direction: column;
 }
 
-.nav-fitur>a {
+.nav-fitur summary {
     color: white;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    background-color: mediumpurple;
+    margin: 15px auto 5px;
+    padding: 16px;
     width: 50%;
     align-self: center;
 }
 
-.nav-fitur-non-active {
-    background-color: indigo;
+.nav-fitur summary:hover {
+    color: mediumpurple;
+    background-color: lavenderblush;
+    transform: scale(1.05);
+    z-index: 1;
 }
 
-.nav-fitur-active {
-    background-color: mediumslateblue;
+#persegi {
+    background-color: lavender;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 0 16px;
+}
+
+.kotakin {
+    color: black;
+    background-color: mediumpurple;
+    border: 5px solid;
+    padding: 20px;
+    margin: 20px;
 }
 
 .section-header {
@@ -41,7 +67,7 @@ main {
 }
 
 .section-image {
-    background-image: url(../assets/Sudut-persegi.png);
+    background-image: url(../assets/persegi.png);
     width: 100px;
     height: 100px;
     justify-self: center;
@@ -54,10 +80,6 @@ main {
     height: 300px;
 }
 
-section {
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
 
 footer {
     text-align: center;
