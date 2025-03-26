@@ -7,13 +7,12 @@
 }
 
 main {
-    padding: 24px;
     text-align: center;
 }
 
 .container-main {
     background-color: lavender;
-    padding: 16px;
+    padding: 40px;
     margin: auto;
 }
 
