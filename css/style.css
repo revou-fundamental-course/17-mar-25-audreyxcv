@@ -1,5 +1,9 @@
 /* Ini CSS External */
 
+body {
+    background-color: lavender;
+}
+
 .main-header h1 {
     background-color: mediumpurple;
     padding: 24px;
