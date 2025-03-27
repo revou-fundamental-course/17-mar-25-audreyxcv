@@ -53,6 +53,10 @@ main {
     margin: auto;
 }
 
+.container-main img {
+    max-width: 60%;
+}
+
 .container-text {
     font-family: DM Serif Text, serif;
     padding-bottom: 10px;
@@ -92,7 +96,6 @@ main {
     margin: 0 auto;
 }
 
-
 section {
     padding: 0 16px;
 }
@@ -123,9 +126,21 @@ section {
 .calculate-content {
     background-color: lavender;
     border: 5px solid;
-    height: 150px;
+    height: 175px;
     padding: 20px;
     margin: 20px;
+}
+
+.calculate-content p {
+    padding: 3px;
+}
+
+.calculate-content h2 {
+    padding: 7px;
+}
+
+.reset-btn {
+    margin-top: 7px;
 }
 
 footer {
