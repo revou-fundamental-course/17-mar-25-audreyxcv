@@ -1,61 +1,73 @@
 const Kalkulator = {
-    hitungLuasPersegi : function () {
-        const sisi = parseFloat(document.getElementById("sisiLuasPersegi").value);
-        if (isNaN(sisi) || sisi <= 0) {
-            alert("Masukkan angka > 0!");
-            return;
-        }
-        document.getElementById("hasilLuasPersegi").innerText = sisi * sisi;
-    },
-        
-    hitungKelilingPersegi: function () {
-        const sisi = parseFloat(document.getElementById("sisiKelilingPersegi").value);
-        if (isNaN(sisi) || sisi <= 0) {
-            alert("Masukkan anglka > 0!");
-            return;
-        }
-        document.getElementById("hasilKelilingPersegi").innerText = 4 * sisi;
-    },
+  hitungLuasPersegi: function () {
+      const sisi = parseFloat(document.getElementById("sisiLuasPersegi").value);
+      if (isNaN(sisi) || sisi <= 0) {
+          alert("Masukkan angka > 0!");
+          return;
+      }
+      const luas = sisi * sisi;
+                document.getElementById("hasilLuasPersegi").innerText = luas;
+                document.getElementById("rumusLuasPersegi").innerText = `Rumus: ${sisi} × ${sisi} = ${luas} cm²`;
+  },
 
-    resetLuasPersegi: function () {
-        document.getElementById("sisiLuasPersegi").value = "";
-        document.getElementById("hasilLuasPersegi").innerText = "0";
-    },
+  hitungKelilingPersegi: function () {
+      const sisi = parseFloat(document.getElementById("sisiKelilingPersegi").value);
+      if (isNaN(sisi) || sisi <= 0) {
+          alert("Masukkan angka > 0!");
+          return;
+      }
+      const keliling = 4 * sisi;
+                document.getElementById("hasilKelilingPersegi").innerText = keliling;
+                document.getElementById("rumusKelilingPersegi").innerText = `Rumus: 4 × ${sisi} = ${keliling} cm`;
+  },
 
-    resetKelilingPersegi: function () {
-        document.getElementById("sisiKelilingPersegi").value = "";
-        document.getElementById("hasilKelilingPersegi").innerText = "0";
-    },
+  resetLuasPersegi: function () {
+      document.getElementById("sisiLuasPersegi").value = "";
+      document.getElementById("hasilLuasPersegi").innerText = "0";
+      document.getElementById("rumusLuasPersegi").innerText = "";
+  },
 
-    hitungLuasPersegiPanjang: function () {
-        const panjang = parseFloat(document.getElementById("panjangLuasPP").value);
-        const lebar = parseFloat(document.getElementById("lebarLuasPP").value);
-        if (isNaN(panjang) || panjang <= 0 || isNaN(lebar) || lebar <= 0) {
-            alert("Masukkan angka > 0!");
-            return;
-        }
-        document.getElementById("hasilLuasPP").innerText = panjang * lebar;
-    },
+  resetKelilingPersegi: function () {
+      document.getElementById("sisiKelilingPersegi").value = "";
+      document.getElementById("hasilKelilingPersegi").innerText = "0";
+      document.getElementById("rumusKelilingPersegi").innerText = "";
+  },
 
-    hitungKelilingPersegiPanjang: function () {
-        const panjang = parseFloat(document.getElementById("panjangKelilingPP").value);
-        const lebar = parseFloat(document.getElementById("lebarKelilingPP").value);
-        if (isNaN(panjang) || panjang <= 0 || isNaN(lebar) || lebar <= 0) {
-            alert("Masukkan angka > 0!");
-            return;        
-        }
-        document.getElementById("hasilKelilingPP").innerText = 2 * (panjang + lebar);
-    },
+  hitungLuasPersegiPanjang: function () {
+      const panjang = parseFloat(document.getElementById("panjangLuasPP").value);
+      const lebar = parseFloat(document.getElementById("lebarLuasPP").value);
+      if (isNaN(panjang) || panjang <= 0 || isNaN(lebar) || lebar <= 0) {
+          alert("Masukkan angka > 0!");
+          return;
+      }
+      const luas = panjang * lebar;
+                document.getElementById("hasilLuasPP").innerText = luas;
+                document.getElementById("rumusLuasPP").innerText = `Rumus: ${panjang} × ${lebar} = ${luas} cm²`;
+  },
 
-    resetLuasPersegiPanjang: function () {
-        document.getElementById("panjangLuasPP").value = "";
-        document.getElementById("lebarLuasPP").value = "";
-        document.getElementById("hasilLuasPP").innerText = "0";
-    },
+  hitungKelilingPersegiPanjang: function () {
+      const panjang = parseFloat(document.getElementById("panjangKelilingPP").value);
+      const lebar = parseFloat(document.getElementById("lebarKelilingPP").value);
+      if (isNaN(panjang) || panjang <= 0 || isNaN(lebar) || lebar <= 0) {
+          alert("Masukkan angka > 0!");
+          return;
+      }
+      const keliling = 2 * (panjang + lebar);
+                document.getElementById("hasilKelilingPP").innerText = keliling;
+                document.getElementById("rumusKelilingPP").innerText = `Rumus: 2 × (${panjang} + ${lebar}) = ${keliling} cm`;
+  },
 
-    resetKelilingPersegiPanjang: function () {
-        document.getElementById("panjangKelilingPP").value = "";
-        document.getElementById("lebarKelilingPP").value = "";
-        document.getElementById("hasilKelilingPP").innerText = "0";
-    },
+  resetLuasPersegiPanjang: function () {
+      document.getElementById("panjangLuasPP").value = "";
+      document.getElementById("lebarLuasPP").value = "";
+      document.getElementById("hasilLuasPP").innerText = "0";
+      document.getElementById("rumusLuasPP").innerText = "";
+  },
+
+  resetKelilingPersegiPanjang: function () {
+      document.getElementById("panjangKelilingPP").value = "";
+      document.getElementById("lebarKelilingPP").value = "";
+      document.getElementById("hasilKelilingPP").innerText = "0";
+      document.getElementById("rumusKelilingPP").innerText = "";
+  }
 };

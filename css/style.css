@@ -1,27 +1,45 @@
 /* Ini CSS External */
 
+html {
+    height: 100%;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    scroll-behavior: smooth;
+}
+
 body {
+    height: 100%;
     background-color: lavender;
 }
 
-.main-header h1 {
+.main-header {
     background-color: mediumpurple;
+    display: flex;
+    justify-content: center;
+    margin: 0;
     padding: 24px;
     text-align: center;
 }
 
+.main-header h1 {
+    text-align: center;
+}
+
 main {
+    padding: 30px;
     text-align: center;
 }
 
 .container-main {
     background-color: lavender;
-    padding: 40px;
+    padding: 16px;
+    max-width: 800px;
     margin: auto;
 }
 
 .container-text {
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 .nav-fitur {
@@ -79,11 +97,13 @@ section {
 }
 
 .calculate-content {
-    border: 1px solid;
-    height: 300px;
+    background-color: lavender;
+    border: 5px solid;
+    height: 200px;
 }
 
-
 footer {
+    background-color: mediumpurple;
+    padding: 20px 0;
     text-align: center;
 }
