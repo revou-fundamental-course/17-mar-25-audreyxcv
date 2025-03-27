@@ -1,5 +1,12 @@
 /* Ini CSS External */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Metamorphous&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html {
     height: 100%;
     -moz-text-size-adjust: none;
@@ -10,9 +17,16 @@ html {
 
 body {
     height: 100%;
+    background: url(https://cdn.pixabay.com/photo/2020/10/31/09/35/violet-5700689_640.jpg);
+    background-size: 15%;
+    background-repeat: repeat;
+}
+.wrapper {
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: lavender;
 }
-
 .main-header {
     background-color: mediumpurple;
     display: flex;
@@ -23,6 +37,7 @@ body {
 }
 
 .main-header h1 {
+    font-family: DM Serif Text, serif;
     text-align: center;
 }
 
@@ -39,6 +54,7 @@ main {
 }
 
 .container-text {
+    font-family: DM Serif Text, serif;
     padding-bottom: 10px;
 }
 
@@ -48,6 +64,7 @@ main {
 }
 
 .nav-fitur summary {
+    font-family: DM Serif Text, serif;
     color: white;
     background-color: mediumpurple;
     margin: 15px auto 5px;
@@ -68,6 +85,13 @@ main {
     max-width: 700px;
     margin: 0 auto;
 }
+
+#persegi-panjang {
+    background-color: lavender;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 
 section {
     padding: 0 16px;
@@ -99,11 +123,17 @@ section {
 .calculate-content {
     background-color: lavender;
     border: 5px solid;
-    height: 200px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px;
 }
 
 footer {
+    font-family: DM Serif Text, serif;
     background-color: mediumpurple;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 0;
     text-align: center;
 }
